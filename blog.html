@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Blog - Personal Website</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="theme-body">
+    
+    <div id="navbar">
+        <nav>
+            <a href="bard.html">Home</a>
+            <button id="toggle-theme">Toggle Theme</button>
+        </nav>
+    </div>
+
+    <div id="blog-container">
+        <div class="blog-card">
+            <h3>Blog 1: Placeholder</h3>
+            <img src="WhatsApp Image 2024-02-05 at 18.04.00_16b1c6bc.jpg" alt="1">
+            <p>This is your first blog post. You can edit this and add your own content.</p>
+            <div id="like-counter-1" class="like-counter">Likes: 0</div>
+            <button onclick="toggleLike(1)" id="like-button-1">Like</button>
+            <div id="comments-section-1" class="comments-section">
+                <textarea placeholder="Add a comment..."></textarea>
+                <button onclick="addComment(1)">Comment</button>
+               
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <h3>Blog 2: Placeholder</h3>
+            <img src="WhatsApp Image 2024-02-05 at 18.09.59_624d9ab4.jpg" alt="1">
+            <img src="WhatsApp Image 2024-02-05 at 18.11.06_e94cfe86.jpg" alt="2">
+            <p>This is your second blog post. You can edit this and add your own content.</p>
+            <div id="like-counter-2" class="like-counter">Likes: 0</div>
+            <button onclick="toggleLike(2)" id="like-button-2">Like</button>
+            <div id="comments-section-2" class="comments-section">
+                <textarea placeholder="Add a comment..."></textarea>
+                <button onclick="addComment(2)">Comment</button>
+                <button onclick="resetLikes(2)">Reset Likes</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="blog.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
